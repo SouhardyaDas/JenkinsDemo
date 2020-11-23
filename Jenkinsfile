@@ -1,8 +1,8 @@
 node{
    def mvnHome
    stage('Preparation'){
-       git 'https://github.com/canindit75/JenkinsDemo.git'
-       mvnHome = tool 'M3'
+       git 'https://github.com/SouhardyaDas/JenkinsDemo.git'
+       mvnHome = tool 'MAVEN_HOME'
     }
    stage('Build'){
       withEnv(['%MAVEN_HOME%=$mvnHome']){
